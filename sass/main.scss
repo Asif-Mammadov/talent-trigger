@@ -135,6 +135,10 @@
       line-height: 0.5rem;
       text-transform: capitalize;
       margin-bottom: 1.5rem;
+
+      &:hover {
+        color: white;
+      }
     }
 
     &--learn {
