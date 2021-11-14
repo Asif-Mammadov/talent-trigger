@@ -12,27 +12,6 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta name="X-Csrf-Token" content="68513e9c645bce3ee3519f066c82fede" />
     <meta id="viewport" name="viewport" content="width=device-width, initial-scale=0.01" />
-
-
-    <script type="application/javascript">
-        window.standaloneContest = false;
-
-        function adjustViewport() {
-            var screenWidthPx = Math.min($(window).width(), window.screen.width);
-            var siteWidthPx = 1100; // min width of site
-            var ratio = Math.min(screenWidthPx / siteWidthPx, 1.0);
-            var viewport = "width=device-width, initial-scale=" + ratio;
-            $('#viewport').attr('content', viewport);
-            var style = $('<style>html * { max-height: 1000000px; }</style>');
-            $('html > head').append(style);
-        }
-
-        /* Protection against trailing dot in domain. */
-        let hostLength = window.location.host.length;
-        if (hostLength > 1 && window.location.host[hostLength - 1] === '.') {
-            window.location = window.location.protocol + "//" + window.location.host.substring(0, hostLength - 1);
-        }
-    </script>
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="expires" content="-1">
     <meta http-equiv="profileName" content="k3">
@@ -44,10 +23,6 @@
     <meta property="og:site_name" content="TT" />
 
 
-
-
-
-
     <meta name="utc_offset" content="+03:00" />
     <meta name="verify-reformal" content="f56f99fd7e087fb6ccb48ef2" />
     <title>Truthand - TT</title>
@@ -55,9 +30,7 @@
     <meta name="keywords" content="" />
     <meta name="robots" content="index, follow" />
 
-    <!--CombineResourcesFilter-->
     <link rel="stylesheet" href="css/account/clear.css" type="text/css" charset="utf-8" />
-    <!-- <link rel="stylesheet" href="css/account/style.css" type="text/css" charset="utf-8" /> -->
     <link rel="stylesheet" href="css/account/ttypography.css" type="text/css" charset="utf-8" />
     <link rel="stylesheet" href="css/account/problem-statement.css" type="text/css" charset="utf-8" />
     <link rel="stylesheet" href="css/account/second-level-menu.css" type="text/css" charset="utf-8" />
@@ -106,7 +79,7 @@
                 </div>
 
                 <div class="nav__menu--signup hide-on-sm">
-                    <a href="login.html" class="nav__menu--btn1" style="font-size: 16px;">My account</a>
+                    <a href="login.html" class="nav__menu--btn1" style="font-size: 16px;">Log out</a>
                     <!-- <a href="register.html" class="nav__menu--btn2">Sign Up</a> -->
                 </div>
 
@@ -117,7 +90,7 @@
         </nav>
     </header>
     <!-- Main page -->
-    <div style="position: relative;">
+    <div style="position: relative; padding: 48px 32px;">
         <div id="sidebar">
             <div class="roundbox sidebox" style="">
                 <div class="roundbox-lt">&nbsp;</div>
@@ -126,7 +99,7 @@
                 </div>
                 <div style="padding: 0.5em;">
                     <div style="text-align:center;border-bottom: 1px solid rgb(185, 185, 185);margin:0 -0.5em 0.5em -0.5em;padding: 0 1em 0.5em 1em;">
-                        <span class="contest-state-phase">Biology</span><br><a href="">Autumn, Round 2</a><br><span class="countdown" home="" noredirection="true" textbeforeredirect=""><span title="341:47:55">5 days left</span></span>
+                        <span class="contest-state-phase">Biology</span><br><a href="competition.html">Autumn, Round 2</a><br><span class="countdown" home="" noredirection="true" textbeforeredirect=""><span title="341:47:55">5 days left</span></span>
                     </div>
                 </div>
             </div>
@@ -201,29 +174,11 @@
                         <div style="float:right;border:1px solid #B9B9B9;width:300px;min-height:150px;padding:12.5px;position: relative;margin-bottom: 1em;">
                             <div>
                                 <div style="min-height:200px;line-height:200px;text-align:center;">
-                                    <img style="margin:auto;vertical-align:middle;display:inline;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ13O3y7jidoojs_hP34Q0OPZvIVaOJN9X1g&usqp=CAU">
+                                    <img style="margin:auto;vertical-align:middle;display:inline; width: 100%;" src="img/account.jpeg">
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <script type="text/javascript">
-                        $(document).ready(function() {
-                            function showChangeTitlePhotoForm() {
-                                $("#change-title-photo").hide();
-                                $(".change-title-photo-form").slideDown();
-                            }
-
-                            $("input.upload-photo").click(function() {
-                                return confirm("Image can't contain offensive, rough or uncultured things. Also it can't contain anyone photo except you.\n\nDo you confirm that the image meets these criteria?");
-                            });
-
-                            $("#change-title-photo").click(function() {
-                                showChangeTitlePhotoForm();
-                            });
-
-                        });
-                    </script>
                     <div class="info" style="position: relative;">
                         <div class="main-info ">
                             <!-- <div class="user-rank">
@@ -367,100 +322,6 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div id="pageContent" class="content-with-sidebar" style="padding-top: 0em;">
-
-        <style>
-            .userbox {
-                overflow: hidden;
-            }
-            
-            .userbox .info {
-                margin-right: 375px;
-                /*padding-top: 1em;*/
-                min-height: 20em;
-                margin-bottom: 1em;
-            }
-            
-            .userbox .info li {
-                margin: 0.5em 0 1em 0;
-            }
-            
-            .userbox input {
-                color: black;
-                height: 2em;
-                line-height: 1.5em;
-                font-size: 0.75em;
-                margin: 0.5em 0.5em 0.5em 0;
-            }
-            
-            .userbox .main-info {
-                margin-bottom: 1em;
-            }
-            
-            .userbox .badge {
-                position: relative;
-                right: 2px;
-                bottom: 4px;
-            }
-            
-            .userbox .main-info-has-badge {
-                margin-bottom: 0.5em !important;
-                position: absolute;
-                left: 90px;
-                top: 0;
-            }
-            
-            .userbox h1 {
-                font-size: 2.5rem;
-            }
-            
-            .userbox h1.long_handle {
-                font-size: 2rem;
-            }
-            
-            .userbox .user-rank {
-                font-size: 1.4rem;
-                font-weight: bold;
-            }
-            
-            .userbox .friendStar {
-                position: relative;
-                top: 4px !important;
-            }
-        </style>
-
-
-
-
-        <!-- Plot -->
-        <!-- <div class="roundbox " style="padding:2em 1em 0 1em;margin-top:1em;">
-          <div class="roundbox-lt">&nbsp;</div>
-          <div class="roundbox-rt">&nbsp;</div>
-          <div class="roundbox-lb">&nbsp;</div>
-          <div class="roundbox-rb">&nbsp;</div>
-
-
-          <div class="notice zoomTip" style="display:none;margin-left:4em;float:left;position:relative;text-align:left;bottom:1em;right:0.6em;font-size:1.0rem;">
-              Click on the graph to enable the zoom feature.
-          </div>
-
-          <div style="float:right;position:relative;text-align:right;bottom:2em;right:6px;font-size:1.0rem;">
-              <form action="#" method="get" id="typeSelectForm">
-                  <label>
-                      <select name="graphType" style="font-size:1.0rem !important;padding:1px;">
-                          <option value="rated" selected="">Only rated</option>
-                          <option value="all">All</option>
-                      </select>
-                  </label>
-              </form>
-          </div>
-
-          <div id="usersRatingGraphPlaceholder" style="width:100%;height:300px;"></div>
-      </div> -->
-        <style type="text/css">
-
-        </style>
 
         <div class="_UserActivityFrame_frame">
             <div class="roundbox userActivityRoundBox" style="">
@@ -538,6 +399,67 @@
                 </div>
             </div>
         </div>
+    </div>
+
+        <style>
+            .userbox {
+                overflow: hidden;
+            }
+            
+            .userbox .info {
+                margin-right: 375px;
+                /*padding-top: 1em;*/
+                min-height: 20em;
+                margin-bottom: 1em;
+            }
+            
+            .userbox .info li {
+                margin: 0.5em 0 1em 0;
+            }
+            
+            .userbox input {
+                color: black;
+                height: 2em;
+                line-height: 1.5em;
+                font-size: 0.75em;
+                margin: 0.5em 0.5em 0.5em 0;
+            }
+            
+            .userbox .main-info {
+                margin-bottom: 1em;
+            }
+            
+            .userbox .badge {
+                position: relative;
+                right: 2px;
+                bottom: 4px;
+            }
+            
+            .userbox .main-info-has-badge {
+                margin-bottom: 0.5em !important;
+                position: absolute;
+                left: 90px;
+                top: 0;
+            }
+            
+            .userbox h1 {
+                font-size: 2.5rem;
+            }
+            
+            .userbox h1.long_handle {
+                font-size: 2rem;
+            }
+            
+            .userbox .user-rank {
+                font-size: 1.4rem;
+                font-weight: bold;
+            }
+            
+            .userbox .friendStar {
+                position: relative;
+                top: 4px !important;
+            }
+        </style>
         <style type="text/css">
             .weeks52 {
                 right: calc(calc(3.606102635228849%) - 3px);
@@ -585,10 +507,11 @@
             ._UserActivityFrame_frame .userActivityRoundBox ._UserActivityFrame_footer ._UserActivityFrame_counter {
                 display: inline-block;
                 width: 30%;
+                margin-bottom: 16px;
             }
             
             ._UserActivityFrame_frame .userActivityRoundBox ._UserActivityFrame_footer ._UserActivityFrame_counterDescription {
-                margin-top: 1px;
+                margin-top: 8px;
                 font-size: 0.55em;
                 color: #888;
             }
