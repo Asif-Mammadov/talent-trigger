@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+    <title>Talent Trigger</title>
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="X-Csrf-Token" content="68513e9c645bce3ee3519f066c82fede" />
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=0.01" />
+
+
+    <script type="application/javascript">
+        window.standaloneContest = false;
+
+        function adjustViewport() {
+            var screenWidthPx = Math.min($(window).width(), window.screen.width);
+            var siteWidthPx = 1100; // min width of site
+            var ratio = Math.min(screenWidthPx / siteWidthPx, 1.0);
+            var viewport = "width=device-width, initial-scale=" + ratio;
+            $('#viewport').attr('content', viewport);
+            var style = $('<style>html * { max-height: 1000000px; }</style>');
+            $('html > head').append(style);
+        }
+
+        /* Protection against trailing dot in domain. */
+        let hostLength = window.location.host.length;
+        if (hostLength > 1 && window.location.host[hostLength - 1] === '.') {
+            window.location = window.location.protocol + "//" + window.location.host.substring(0, hostLength - 1);
+        }
+    </script>
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="-1">
+    <meta http-equiv="profileName" content="k3">
+    <meta name="google-site-verification" content="OTd2dN5x4nS4OPknPI9JFg36fKxjqY0i1PSfFPv_J90" />
+    <meta property="fb:admins" content="100001352546622" />
+    <meta property="og:title" content="Truthand - TT" />
+    <meta property="og:description" content="" />
+
+    <meta property="og:site_name" content="TT" />
+
+
+
+
+
+
+    <meta name="utc_offset" content="+03:00" />
+    <meta name="verify-reformal" content="f56f99fd7e087fb6ccb48ef2" />
+    <title>Truthand - TT</title>
+    <meta name="description" content="TT" />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="index, follow" />
+
+    <!--CombineResourcesFilter-->
+    <link rel="stylesheet" href="css/account/clear.css" type="text/css" charset="utf-8" />
+    <!-- <link rel="stylesheet" href="css/account/style.css" type="text/css" charset="utf-8" /> -->
+    <link rel="stylesheet" href="css/account/ttypography.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="css/account/problem-statement.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="css/account/second-level-menu.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="css/account/roundbox.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="css/account/datatable.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="css/account/table-form.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="css/account/topic.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="css/account/jquery.jgrowl.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="css/account/facebox.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="css/account/jquery.wysiwyg.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="css/account/jquery.autocomplete.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="css/account/colorbox.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="css/account/jquery.drafts.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="css/account/calendar_yearview_blocks.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="css/account/community.css" type="text/css" charset="utf-8" />
+    <style>
+        a {
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="header container-fluid">
+        <nav class="nav row" style="position: relative;">
+            <div class="col-12 nav__container">
+                <div class="nav__logo-div">
+                    <a href="home.html">
+                        <img src="img/logo.jpeg" alt="logo image" class="nav__logo-div--img" />
+                    </a>
+                </div>
+
+                <div class="nav__menu--large-menu hide-on-sm" style="font-size: 16px;">
+                    <ul class="nav__menu--ul">
+                        <li class="nav__menu--li">
+                            <a href="#" class="nav__menu--link">Resources</a>
+                        </li>
+                        <li class="nav__menu--li">
+                            <a href="#" class="nav__menu--link">Blog</a>
+                        </li>
+                        <li class="nav__menu--li">
+                            <a href="#" class="nav__menu--link">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="nav__menu--signup hide-on-sm">
+                    <a href="login.html" class="nav__menu--btn1" style="font-size: 16px;">My account</a>
+                    <!-- <a href="register.html" class="nav__menu--btn2">Sign Up</a> -->
+                </div>
+
+                <div class="nav__menu--hamburger-div hide-on-lg">
+                    <img src="img/hamburger.png" alt="hamburger menu" class="nav__menu--hamburger-img" />
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Main page -->
+    <div style="position: relative;">
+        <div id="sidebar">
+            <div class="roundbox sidebox" style="">
+                <div class="roundbox-lt">&nbsp;</div>
+                <div class="roundbox-rt">&nbsp;</div>
+                <div class="caption titled" style="color: #43C59E;">Current Events
+                </div>
+                <div style="padding: 0.5em;">
+                    <div style="text-align:center;border-bottom: 1px solid rgb(185, 185, 185);margin:0 -0.5em 0.5em -0.5em;padding: 0 1em 0.5em 1em;">
+                        <span class="contest-state-phase">Biology</span><br><a href="">Autumn, Round 2</a><br><span class="countdown" home="" noredirection="true" textbeforeredirect=""><span title="341:47:55">5 days left</span></span>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                $(function() {
+
+                });
+            </script>
+
+            <style type="text/css">
+                ._StreamsSidebarFrame_frame {
+                    padding: 0.5em 0.5em 0 0.5em;
+                }
+                
+                ._StreamsSidebarFrame_frame ._StreamsSidebarFrame_stream {
+                    text-align: center;
+                    border-bottom: 1px solid #b9b9b9;
+                    margin: 0 -0.5em 0.5em -0.5em;
+                    padding: 0 1em 0.5em 1em;
+                }
+                
+                ._StreamsSidebarFrame_frame ._StreamsSidebarFrame_stream ._StreamsSidebarFrame_user {
+                    margin: 0 0 0.5em 0;
+                    font-size: 0.8em;
+                }
+                
+                ._StreamsSidebarFrame_frame ._StreamsSidebarFrame_stream ._StreamsSidebarFrame_timeMark {
+                    color: #777;
+                    font-size: 0.9em;
+                }
+                
+                ._StreamsSidebarFrame_frame ._StreamsSidebarFrame_stream:last-of-type {
+                    border-bottom: unset;
+                    margin: unset;
+                    padding: 0 0.5em 0.5em 1em;
+                }
+                
+                ._StreamsSidebarFrame_frame ._viewAll {
+                    text-align: right;
+                }
+                
+                .moreRunningStreamsSidebarNote {
+                    color: #777 !important;
+                    text-decoration: none;
+                }
+            </style>
+            <div class="roundbox " style="padding:1em 1em 0 1em;">
+                <div class="roundbox-lt">&nbsp;</div>
+                <div class="roundbox-rt">&nbsp;</div>
+                <div class="roundbox-lb">&nbsp;</div>
+                <div class="roundbox-rb">&nbsp;</div>
+                <div class="userbox">
+
+                    <style>
+                        .title-photo input.upload-photo {
+                            color: black;
+                            height: 2em;
+                            line-height: 1.5em;
+                            font-size: 0.75em;
+                            margin: 0.5em 0.5em 0.5em 0;
+                        }
+                        
+                        .title-photo .badge {
+                            position: absolute;
+                            bottom: -30px;
+                            transform: scale(0.75);
+                        }
+                    </style>
+
+                    <div class="title-photo">
+                        <div style="float:right;border:1px solid #B9B9B9;width:300px;min-height:150px;padding:12.5px;position: relative;margin-bottom: 1em;">
+                            <div>
+                                <div style="min-height:200px;line-height:200px;text-align:center;">
+                                    <img style="margin:auto;vertical-align:middle;display:inline;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ13O3y7jidoojs_hP34Q0OPZvIVaOJN9X1g&usqp=CAU">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <script type="text/javascript">
+                        $(document).ready(function() {
+                            function showChangeTitlePhotoForm() {
+                                $("#change-title-photo").hide();
+                                $(".change-title-photo-form").slideDown();
+                            }
+
+                            $("input.upload-photo").click(function() {
+                                return confirm("Image can't contain offensive, rough or uncultured things. Also it can't contain anyone photo except you.\n\nDo you confirm that the image meets these criteria?");
+                            });
+
+                            $("#change-title-photo").click(function() {
+                                showChangeTitlePhotoForm();
+                            });
+
+                        });
+                    </script>
+                    <div class="info" style="position: relative;">
+                        <div class="main-info ">
+                            <!-- <div class="user-rank">
+                        <span class="user-legendary">Legendary Grandmaster </span>
+                      </div> -->
+                            <h1>
+                                <a href="account.html" title="Hasan03" class="rated-user user-legendary"><span
+                            class="legendary-user-first-letter">Truthand</span></a>
+                            </h1>
+
+                            <div style="margin-top: 0.5em;">
+                                <div style="font-size: 0.8em; color: #777;"> <a href="">Baku</a>,
+                                    <a href="">Azerbaijan</a>
+                                </div>
+                                <div style="font-size: 0.8em; color: #777;"><a href="">School №53</a></div>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>
+                                Contest rating:
+                                <span style="font-weight:bold;" class="user-legendary">1560</span>
+                            </li>
+                            <li>
+                                Friends: 29 users
+                            </li>
+                            <li>
+
+                                Registered:
+
+                                <span class="format-humantime" title="Nov/14/2021 05:02">2 days ago</span>
+                            </li>
+                            <li>
+                                <a href="">Send message</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <form class="trust-user-form-proto"><input type="hidden" name="csrf_token" value="68513e9c645bce3ee3519f066c82fede">
+                    <input class="trust-user-form-checkbox" type="checkbox">
+                    <i class="icon-question-sign clickable-title"></i>
+                </form>
+
+                <style>
+                    .trust-user-form-proto {
+                        display: none;
+                    }
+                    
+                    .trust-user-form,
+                    .trust-user-form form {
+                        display: inline;
+                        padding: 0;
+                        margin: 0;
+                        line-height: 1rem;
+                    }
+                    
+                    .trust-user-form input {
+                        padding: 0;
+                        margin: 0;
+                        position: relative;
+                        top: 7px;
+                    }
+                </style>
+            </div>
+            <div class="roundbox sidebox top-contributed" style="">
+                <div class="roundbox-lt">&nbsp;</div>
+                <div class="roundbox-rt">&nbsp;</div>
+                <div class="caption titled" style="color: #43C59E;">Top rated
+                    <div class="top-links">
+                    </div>
+                </div>
+                <table class="rtable ">
+                    <tbody style="">
+                        <tr>
+                            <th class="left" style="width:2.25em;">#</th>
+                            <th class="">User</th>
+                            <th class="" style="width:5em;">Rating</th>
+                        </tr>
+                        <tr>
+                            <td class="left dark">1</td>
+                            <td class=" dark"><a href="" title="Legendary Grandmaster tourist" class="rated-user user-legendary"><span class="legendary-user-first-letter">Truthand</span></a></td>
+                            <td class=" dark">1560</td>
+                        </tr>
+                        <tr>
+                            <td class="left ">2</td>
+                            <td class=""><a href="" title="Legendary Grandmaster Benq" class="rated-user user-legendary"><span class="legendary-user-first-letter">SirenSong</span></a></td>
+                            <td class="">1430</td>
+                        </tr>
+                        <tr>
+                            <td class="left dark">3</td>
+                            <td class=" dark"><a href="Miracle03.html" title="Legendary Grandmaster Miracle03" class="rated-user user-legendary"><span class="legendary-user-first-letter">Bacterigerm</span></a></td>
+                            <td class=" dark">1231</td>
+                        </tr>
+                        <tr>
+                            <td class="left ">4</td>
+                            <td class=""><a href="" title="Legendary Grandmaster ecnerwala" class="rated-user user-legendary"><span class="legendary-user-first-letter">Maradonner</span></a></td>
+                            <td class="">1111</td>
+                        </tr>
+                        <tr>
+                            <td class="left dark">5</td>
+                            <td class=" dark"><a href="" title="Legendary Grandmaster ksun48" class="rated-user user-legendary"><span class="legendary-user-first-letter">Friezer</span></a></td>
+                            <td class=" dark">995</td>
+                        </tr>
+                        <tr>
+                            <td class="left ">6</td>
+                            <td class=""><a href="" title="Legendary Grandmaster djq_cpp" class="rated-user user-legendary"><span class="legendary-user-first-letter">TestRobot</span></a></td>
+                            <td class="">875</td>
+                        </tr>
+                        <tr>
+                            <td class="left dark">7</td>
+                            <td class=" dark"><a href="" title="Legendary Grandmaster peehs_moorhsum" class="rated-user user-legendary"><span
+                    class="legendary-user-first-letter">Miniscus</span></a></td>
+                            <td class=" dark">800</td>
+                        </tr>
+                        <tr>
+                            <td class="left ">8</td>
+                            <td class=""><a href="" title="Legendary Grandmaster Radewoosh" class="rated-user user-legendary"><span class="legendary-user-first-letter">Everday</span></a></td>
+                            <td class="">750</td>
+                        </tr>
+                        <tr>
+                            <td class="left dark">9</td>
+                            <td class=" dark"><a href="" title="Legendary Grandmaster sunset" class="rated-user user-legendary"><span class="legendary-user-first-letter">Quidity</span></a></td>
+                            <td class=" dark">721</td>
+                        </tr>
+                        <tr>
+                            <td class="left bottom">10</td>
+                            <td class="bottom"><a href="" title="Legendary Grandmaster jiangly" class="rated-user user-legendary"><span class="legendary-user-first-letter">ElectricEel</span></a></td>
+                            <td class="bottom">695</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="bottom-links">
+                    <table style="width:100%;">
+                        <tbody>
+                            <tr>
+                                <td style="text-align:right;">
+                                    <a href="">View all →</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="pageContent" class="content-with-sidebar" style="padding-top: 0em;">
+
+        <style>
+            .userbox {
+                overflow: hidden;
+            }
+            
+            .userbox .info {
+                margin-right: 375px;
+                /*padding-top: 1em;*/
+                min-height: 20em;
+                margin-bottom: 1em;
+            }
+            
+            .userbox .info li {
+                margin: 0.5em 0 1em 0;
+            }
+            
+            .userbox input {
+                color: black;
+                height: 2em;
+                line-height: 1.5em;
+                font-size: 0.75em;
+                margin: 0.5em 0.5em 0.5em 0;
+            }
+            
+            .userbox .main-info {
+                margin-bottom: 1em;
+            }
+            
+            .userbox .badge {
+                position: relative;
+                right: 2px;
+                bottom: 4px;
+            }
+            
+            .userbox .main-info-has-badge {
+                margin-bottom: 0.5em !important;
+                position: absolute;
+                left: 90px;
+                top: 0;
+            }
+            
+            .userbox h1 {
+                font-size: 2.5rem;
+            }
+            
+            .userbox h1.long_handle {
+                font-size: 2rem;
+            }
+            
+            .userbox .user-rank {
+                font-size: 1.4rem;
+                font-weight: bold;
+            }
+            
+            .userbox .friendStar {
+                position: relative;
+                top: 4px !important;
+            }
+        </style>
+
+
+
+
+        <!-- Plot -->
+        <!-- <div class="roundbox " style="padding:2em 1em 0 1em;margin-top:1em;">
+          <div class="roundbox-lt">&nbsp;</div>
+          <div class="roundbox-rt">&nbsp;</div>
+          <div class="roundbox-lb">&nbsp;</div>
+          <div class="roundbox-rb">&nbsp;</div>
+
+
+          <div class="notice zoomTip" style="display:none;margin-left:4em;float:left;position:relative;text-align:left;bottom:1em;right:0.6em;font-size:1.0rem;">
+              Click on the graph to enable the zoom feature.
+          </div>
+
+          <div style="float:right;position:relative;text-align:right;bottom:2em;right:6px;font-size:1.0rem;">
+              <form action="#" method="get" id="typeSelectForm">
+                  <label>
+                      <select name="graphType" style="font-size:1.0rem !important;padding:1px;">
+                          <option value="rated" selected="">Only rated</option>
+                          <option value="all">All</option>
+                      </select>
+                  </label>
+              </form>
+          </div>
+
+          <div id="usersRatingGraphPlaceholder" style="width:100%;height:300px;"></div>
+      </div> -->
+        <style type="text/css">
+
+        </style>
+
+        <div class="_UserActivityFrame_frame">
+            <div class="roundbox userActivityRoundBox" style="">
+                <div class="roundbox-lt">&nbsp;</div>
+                <div class="roundbox-rt">&nbsp;</div>
+                <div class="roundbox-lb">&nbsp;</div>
+                <div class="roundbox-rb">&nbsp;</div>
+
+                <div class="_UserActivityFrame_header">
+                    <span class="_UserActivityFrame_caption">
+          </span>
+
+                    <div class="_UserActivityFrame_selector weeks52">
+                        <label>
+              <select name="yearSelect" style="font-size: 1em !important">
+                <option value="" selected="">Choose year</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+              </select>
+            </label>
+                    </div>
+
+                </div>
+
+                <div id="userActivityGraph"></div>
+
+                <div class="_UserActivityFrame_footer">
+                    <div class="_UserActivityFrame_countersRow">
+                        <div class="_UserActivityFrame_counter">
+                            <div class="_UserActivityFrame_counterValue">797 problems</div>
+                            <div class="_UserActivityFrame_counterDescription">
+                                solved for all time
+                            </div>
+                        </div>
+
+                        <div class="_UserActivityFrame_counter">
+                            <div class="_UserActivityFrame_counterValue">233 problems</div>
+                            <div class="_UserActivityFrame_counterDescription">
+                                solved for the last year
+                            </div>
+                        </div>
+
+                        <div class="_UserActivityFrame_counter">
+                            <div class="_UserActivityFrame_counterValue">41 problems</div>
+                            <div class="_UserActivityFrame_counterDescription">
+                                solved for the last month
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="_UserActivityFrame_countersRow">
+                        <div class="_UserActivityFrame_counter">
+                            <div class="_UserActivityFrame_counterValue">15 days</div>
+                            <div class="_UserActivityFrame_counterDescription">
+                                in a row max.
+                            </div>
+                        </div>
+
+                        <div class="_UserActivityFrame_counter">
+                            <div class="_UserActivityFrame_counterValue">4 days</div>
+                            <div class="_UserActivityFrame_counterDescription">
+                                in a row for the last year
+                            </div>
+                        </div>
+
+                        <div class="_UserActivityFrame_counter">
+                            <div class="_UserActivityFrame_counterValue">2 days</div>
+                            <div class="_UserActivityFrame_counterDescription">
+                                in a row for the last month
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <style type="text/css">
+            .weeks52 {
+                right: calc(calc(3.606102635228849%) - 3px);
+            }
+            
+            .weeks53 {
+                right: calc(calc(1.8030513176144245%) - 3px);
+            }
+            
+            ._UserActivityFrame_frame {
+                margin: 1em 0;
+            }
+            
+            ._UserActivityFrame_frame .userActivityRoundBox {
+                padding: 1em 1em 1em 1.5em;
+            }
+            
+            ._UserActivityFrame_frame .userActivityRoundBox ._UserActivityFrame_header {
+                margin: 0 0 0.7em 3.3%;
+                font-size: 0.8em;
+                color: #888;
+            }
+            
+            ._UserActivityFrame_frame .userActivityRoundBox ._UserActivityFrame_header ._UserActivityFrame_caption {
+                color: #888;
+            }
+            
+            ._UserActivityFrame_frame .userActivityRoundBox ._UserActivityFrame_header ._UserActivityFrame_selector {
+                float: right;
+                position: relative;
+                bottom: 2px;
+                text-align: right;
+                margin-left: 1em;
+            }
+            
+            ._UserActivityFrame_frame .userActivityRoundBox ._UserActivityFrame_footer {
+                margin: 0.7em 0 0 3.3%;
+                font-size: 2rem;
+            }
+            
+            ._UserActivityFrame_frame .userActivityRoundBox ._UserActivityFrame_footer ._UserActivityFrame_countersRow:first-child {
+                margin-bottom: 1em;
+            }
+            
+            ._UserActivityFrame_frame .userActivityRoundBox ._UserActivityFrame_footer ._UserActivityFrame_counter {
+                display: inline-block;
+                width: 30%;
+            }
+            
+            ._UserActivityFrame_frame .userActivityRoundBox ._UserActivityFrame_footer ._UserActivityFrame_counterDescription {
+                margin-top: 1px;
+                font-size: 0.55em;
+                color: #888;
+            }
+            
+            ._UserActivityFrame_frame .userActivityRoundBox #userActivityGraph {
+                font-size: 0.7em;
+            }
+            
+            ._UserActivityFrame_frame .userActivityRoundBox #userActivityGraph svg {
+                width: 100%;
+            }
+            
+            ._UserActivityFrame_frame .userActivityRoundBox #userActivityGraph svg text {
+                fill: #888;
+            }
+        </style>
+    </div>
+    </div>
+
+    <footer class="footer">
+        <nav class="row">
+            <div class="col-1-of-6">
+                <h4 class="contents__content-one--small-head padding-bottom">
+                    Product
+                </h4>
+                <ul class="footer__ul">
+                    <li class="footer__ul--li">
+                        <a href="#" class="footer__ul--link">Problem</a>
+                    </li>
+                    <li class="footer__ul--li">
+                        <a href="#" class="footer__ul--link">Solution</a>
+                    </li>
+                    <li class="footer__ul--li">
+                        <a href="#" class="footer__ul--link">Features</a>
+                    </li>
+                    <li class="footer__ul--li">
+                        <a href="#" class="footer__ul--link">Target group</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-1-of-6">
+                <h4 class="contents__content-one--small-head padding-bottom">Blog</h4>
+                <ul class="footer__ul">
+                    <li class="footer__ul--li">
+                        <a href="#" class="footer__ul--link">Physics</a>
+                    </li>
+                    <li class="footer__ul--li">
+                        <a href="#" class="footer__ul--link">Mathematics</a>
+                    </li>
+                    <li class="footer__ul--li">
+                        <a href="#" class="footer__ul--link">Chemistry</a>
+                    </li>
+                    <li class="footer__ul--li">
+                        <a href="#" class="footer__ul--link">Programming</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-1-of-6">
+                <h4 class="contents__content-one--small-head padding-bottom">
+                    About us
+                </h4>
+                <ul class="footer__ul">
+                    <li class="footer__ul--li">
+                        <a href="#" class="footer__ul--link">Who are we?</a>
+                    </li>
+                    <li class="footer__ul--li">
+                        <a href="#" class="footer__ul--link">Career</a>
+                    </li>
+                    <li class="footer__ul--li">
+                        <a href="#" class="footer__ul--link">Our Team</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-1-of-6">
+                <h4 class="contents__content-one--small-head padding-bottom">
+                    contact us
+                </h4>
+                <ul class="footer__ul">
+                    <li class="footer__ul--li">
+                        <a href="#" class="footer__ul--link">Tel: +994551231212</a>
+                    </li>
+                    <li class="footer__ul--li">
+                        <a href="#" class="footer__ul--link">Terms & Conditions</a>
+                    </li>
+                    <li class="footer__ul--li">
+                        <a href="#" class="footer__ul--link">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
+</body>
+
+</html>
