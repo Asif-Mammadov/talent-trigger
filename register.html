@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Talent Trigger | Register</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+      integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Rubik"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Rubik"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-light">
+    <header class="header container-fluid">
+      <nav class="nav row">
+        <div class="col-12 nav__container">
+          <div class="nav__logo-div">
+            <a href="home.html">
+              <img
+                src="img/logo.jpeg"
+                alt="logo image"
+                class="nav__logo-div--img"
+              />
+            </a>
+          </div>
+
+          <div class="nav__menu--signup hide-on-sm">
+            <a href="leaderboard.html" class="nav__menu--btn1">Leaderboard</a>
+            <a href="login.html" class="nav__menu--btn2">Sign In</a>
+          </div>
+
+          <div class="nav__menu--hamburger-div hide-on-lg">
+            <img
+              src="img/hamburger.png"
+              alt="hamburger menu"
+              class="nav__menu--hamburger-img"
+            />
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="jumbotron jumbotron-fluid hero mb-0">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+            <h1 class="mb-3 text-center headline">Sign Up</h1>
+            <form method="POST" action="">
+              <div id="div_id_username" class="form-group">
+                <label for="id_username" class="col-form-label requiredField">
+                  Username<span class="asteriskField">*</span>
+                </label>
+                <div class="">
+                  <input
+                    type="text"
+                    name="username"
+                    maxlength="150"
+                    autofocus
+                    class="textinput textInput form-control"
+                    required
+                    id="id_username"
+                  />
+                  <small id="hint_id_username" class="form-text text-muted"
+                    >Required. 150 characters or fewer. Letters, digits and
+                    @/./+/-/_ only.</small
+                  >
+                </div>
+              </div>
+              <div id="div_id_first_name" class="form-group">
+                <label for="id_first_name" class="col-form-label requiredField">
+                  First name<span class="asteriskField">*</span>
+                </label>
+                <div class="">
+                  <input
+                    type="text"
+                    name="first_name"
+                    class="textinput textInput form-control"
+                    required
+                    id="id_first_name"
+                  />
+                </div>
+              </div>
+              <div id="div_id_last_name" class="form-group">
+                <label for="id_last_name" class="col-form-label requiredField">
+                  Last name<span class="asteriskField">*</span>
+                </label>
+                <div class="">
+                  <input
+                    type="text"
+                    name="last_name"
+                    class="textinput textInput form-control"
+                    required
+                    id="id_last_name"
+                  />
+                </div>
+              </div>
+              <div id="div_id_email" class="form-group">
+                <label for="id_email" class="col-form-label requiredField">
+                  Email<span class="asteriskField">*</span>
+                </label>
+                <div class="">
+                  <input
+                    type="email"
+                    name="email"
+                    class="emailinput form-control"
+                    required
+                    id="id_email"
+                  />
+                </div>
+              </div>
+              <div id="div_id_password1" class="form-group">
+                <label for="id_password1" class="col-form-label requiredField">
+                  Password<span class="asteriskField">*</span>
+                </label>
+                <div class="">
+                  <input
+                    type="password"
+                    name="password1"
+                    class="textinput textInput form-control"
+                    required
+                    id="id_password1"
+                  />
+                  <small id="hint_id_password1" class="form-text text-muted"
+                    ><ul>
+                      <li>
+                        Your password can&#39;t be too similar to your other
+                        personal information.
+                      </li>
+                      <li>Your password must contain at least 8 characters.</li>
+                      <li>
+                        Your password can&#39;t be a commonly used password.
+                      </li>
+                      <li>Your password can&#39;t be entirely numeric.</li>
+                    </ul></small
+                  >
+                </div>
+              </div>
+              <div id="div_id_password2" class="form-group">
+                <label for="id_password2" class="col-form-label requiredField">
+                  Password confirmation<span class="asteriskField">*</span>
+                </label>
+                <div class="">
+                  <input
+                    type="password"
+                    name="password2"
+                    class="textinput textInput form-control"
+                    required
+                    id="id_password2"
+                  />
+                  <small id="hint_id_password2" class="form-text text-muted"
+                    >Enter the same password as before, for verification.</small
+                  >
+                </div>
+              </div>
+
+              <input
+                type="submit"
+                class="hero__btn-div--btn"
+                value="Create Account"
+              />
+            </form>
+            <div class="text-center">
+              <p class="mb-3">or ...</p>
+              <a href="register.html" class="contents__content-one--btn"
+                >Sign In</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-light text-muted py-0">
+      <div class="container py-4">
+        <ul class="list-inline mb-0 text-center">
+          <li class="list-inline-item">&copy; 2021 Talent Trigger.</li>
+          <li class="list-inline-item">All rights reserved.</li>
+        </ul>
+      </div>
+    </footer>
+    <!-- jQuery first, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+      integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+      integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- <script src="/static/js/main.js"></script>
+     -->
+  </body>
+</html>

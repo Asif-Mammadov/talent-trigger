@@ -32,8 +32,6 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   line-height: 1;
-  margin-right:0.5%;
-  margin-left:0%; 
   font-family: sans-serif;
 }
 ol, ul {
@@ -68,7 +66,7 @@ table {
 .row {
   display: flex;
   flex-wrap: wrap;
-  width: 100vw;
+  width: 100%;
 
 }
 
